@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+praw
+transformers
+torch
+pandas
+scikit-learn
+streamlit
