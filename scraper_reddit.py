@@ -3,6 +3,7 @@ from datetime import datetime
 from sqlmodel import Session
 from app_main import engine
 from models import Source
+from db import Base, engine
 
 # Configure Reddit API
 reddit = praw.Reddit(
@@ -30,4 +31,5 @@ def scrape_reddit(subreddit="Fantasy", limit=20):
     return posts
 
 if __name__ == "__main__":
+    Base.metadata.create_all(engine)
     scrape_reddit("Fantasy", limit=10)
