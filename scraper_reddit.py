@@ -6,9 +6,9 @@ from models import Source
 
 # Configure Reddit API
 reddit = praw.Reddit(
-    client_id="YOUR_ID",
-    client_secret="YOUR_SECRET",
-    user_agent="fiction-engine"
+    client_id="0fvhahC2bponrwq48j9zJw",
+    client_secret="OahbCteEPorK88dBj_o97txzJE2x9g",
+    user_agent="StoryTeller App by jtrollins"
 )
 
 def scrape_reddit(subreddit="Fantasy", limit=20):
